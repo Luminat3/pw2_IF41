@@ -1,5 +1,5 @@
 <?php
-//Create Variable
+//Create Dynamic
 $nama_asli = "Adrian Chen";
 $nama_samaran = "Luminoir";
 
@@ -61,9 +61,25 @@ echo "<br/>";
     // to merge 2 array or more;
     $hobby3 = array_merge($hobby, $hobby2);
     echo "<br/>";
-    
+
     //to show the item inside of the array use print_r e.g:
     print_r($hobby);
+    echo "<br/>";
     print_r($hobby2);
+    echo "<br/>";
     print_r($hobby3);
+    echo "<br/>";
+
+    //Create Static Variable or Constant var. The first parameter is the name of the variable and the second parameter is the value of that variable
+    define("TempatLahir", "Palembang");
+    echo "<br/>";
+    echo TempatLahir;
+    echo "<br/>";
+
+
+    //to delete variable use unset e.g:
+    unset($umur);
+    echo "<br/>";
+    echo $umur; // will show an error cause the variable in gone or deleted
+    echo "<br/>";
 ?>
