@@ -1,5 +1,7 @@
 <?php
-//Create Dynamic
+
+// Local Variable
+//Create Dynamic Variable
 $nama_asli = "Adrian Chen";
 $nama_samaran = "Luminoir";
 
@@ -82,4 +84,43 @@ echo "<br/>";
     echo "<br/>";
     echo $umur; // will show an error cause the variable in gone or deleted
     echo "<br/>";
+
+
+
+//Both of those variable on the above is a local Variable
+// The var below is a Global type var
+// Global Var
+    /*
+    1. Post ==> $_POST['npm'];
+    2. Get ==> $_GET['npm'];
+    3. Session ==> $_SESSION['username'];
+    4. Cookies ==> $_COOKIE['email'];
+    5. Server ==> $_SERVER[]
+    */
+
+
+// Q1 : Change the front of the $nama_asli string into all upper case
+    $contoh = "hello world";
+    $contoh = ucfirst($contoh);
+    echo $contoh;
+    echo "<br/>";
+
+// Q2 : Change all start of words in var content to upper case
+    $contoh2 = "hello world";
+    $contoh2 = ucwords($contoh2);
+    echo $contoh2;
+    echo "<br/>";
+
+//  Q3 : Change all of the var content to uppercase
+    $contoh3 = "hello World";
+    $contoh3 = strtoupper($contoh3);
+
+    //to make it to lower case use lcfirst, lcwords, and strtolower
+
+
+//  Q4 Take part of the Prodi code from your npm
+    $npm = "2125250002";
+    echo substr($npm, 4,2);
+
+    
 ?>
